@@ -17,7 +17,7 @@ Lalu ketik command dibawah ini
 
 ## Fitur
 - GET : http://127.0.0.1:8000/api/pegawais
-- POST : http://127.0.0.1:8000/api/pegawais
+- POST : http://127.0.0.1:8000/api/pegawai
 - GET : http://127.0.0.1:8000/api/gajis
 - POST : http://127.0.0.1:8000/api/gaji
 - GET : http://127.0.0.1:8000/api/gajis/2022-03
