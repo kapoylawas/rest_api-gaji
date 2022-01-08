@@ -49,7 +49,7 @@ Route::put('/gajis/{id}', [GajiController::class, 'index']);
 
 Route::delete('/gajis/{id}', [GajiController::class, 'destroy']);
 
-Route::get('send-email', function () {
+Route::get('send-email-gaji', function () {
     $data['email'] = "arif.sangga@gmail.com";
     
     dispatch(new App\Jobs\SendEmailJob($data));
