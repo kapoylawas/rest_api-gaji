@@ -18,6 +18,7 @@ class CreateGajisTable extends Migration
             $table->string('name_karyawan');
             $table->integer('gaji_karyawan');
             $table->date('tanggal');
+            $table->string('pending_jobs');
             $table->timestamps();
         });
     }

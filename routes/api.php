@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GajiController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\UploadController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
@@ -49,9 +50,14 @@ Route::put('/gajis/{id}', [GajiController::class, 'index']);
 
 Route::delete('/gajis/{id}', [GajiController::class, 'destroy']);
 
-Route::get('send-email-gaji', function () {
-    $data['email'] = "arif.sangga@gmail.com";
+// Route::get('send-email-gaji', function () {
+//     $data['email'] = "arif.sangga@gmail.com";
     
-    dispatch(new App\Jobs\SendEmailJob($data));
-});
+//     dispatch(new App\Jobs\SendEmailJob($data));
+// });
+
+Route::get('/upload', [UploadController::class, 'index']);
+Route::post('/upload', [UploadController::class, 'upload']);
+Route::get('/batch', [UploadController::class, 'batch']);
+Route::get('/batch/in-progress', [UploadController::class, 'batchInProgress']);
 

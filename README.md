@@ -21,8 +21,11 @@ Lalu ketik command dibawah ini
 - GET : http://127.0.0.1:8000/api/gajis
 - POST : http://127.0.0.1:8000/api/gaji
 - GET : http://127.0.0.1:8000/api/gajis/2022-03
-- GET : http://127.0.0.1:8000/api/send-email-gaji
+
+## Fitur untuk upload menambahkan gaji (bentuk csv)
+- POST : http://127.0.0.1:8000/upload
+## Fitur untuk melihat proses upload gaji id di dapat ketika upload berhasil bentuk response id dll
+- GET : http://127.0.0.1:8000/api/batch?id=954ea66d-865d-4db5-877d-420be261f283
 
 ## URL Dokumentasi di Postman
-
 - https://documenter.getpostman.com/view/5049400/UVXercvE

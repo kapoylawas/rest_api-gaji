@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,4 +22,7 @@ Route::get('send-email', function () {
         $data['email'] = "arif.sangga@gmail.com";
     
         dispatch(new App\Jobs\SendEmailJob($data));
-    });
+});
+
+Route::get('/upload', [UploadController::class, 'index']);
+Route::post('/upload', [UploadController::class, 'upload']);
