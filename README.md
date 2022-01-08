@@ -22,3 +22,7 @@ Lalu ketik command dibawah ini
 - POST : http://127.0.0.1:8000/api/gaji
 - GET : http://127.0.0.1:8000/api/gajis/2022-03
 - GET : http://127.0.0.1:8000/api/send-email-gaji
+
+## URL Dokumentasi di Postman
+
+- https://documenter.getpostman.com/view/5049400/UVXercvE
